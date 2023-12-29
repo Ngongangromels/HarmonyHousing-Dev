@@ -1,0 +1,250 @@
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+    display: block;
+  }
+
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+.dropdown-item:hover {
+    color: #004aad;
+}
+.nav-link:hover {
+    color: #004aad;
+}
+
+/* CSS pour la pagination */
+
+.pagination-outer{ text-align: center; }
+.pagination{
+    font-family: 'Poppins', sans-serif;
+    display: inline-flex;
+    position: relative;
+}
+.pagination li a.page-link{
+    color: #111;
+    background: transparent;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 33px;
+    height: 33px;
+    width: 33px;
+    padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    display: block;
+    position: relative;
+    z-index: 0;
+    transition: all 0.1s ease 0s;
+}
+.pagination li:first-child a.page-link,
+.pagination li:last-child a.page-link{
+    font-size: 23px;
+    line-height: 31px;
+}
+.pagination li a.page-link:hover,
+.pagination li a.page-link:focus,
+.pagination li.active a.page-link:hover,
+.pagination li.active a.page-link{
+    color: #fff;
+    background: transparent;
+    line-height: 24px;
+    border-color: #ccc;
+    border-top-color: transparent;
+}
+.pagination li a.page-link:before{
+    content: '';
+    background-color: #004aad;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(0.8);
+    position: absolute;
+    left: 0;
+    top: 5px;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.pagination li a.page-link:hover:before,
+.pagination li a.page-link:focus:before,
+.pagination li.active a.page-link:hover:before,
+.pagination li.active a.page-link:before{
+    opacity: 1;
+    top: -4px;
+}
+@media only screen and (max-width: 480px){
+    .pagination{
+        font-size: 0;
+        display: inline-block;
+    }
+    .pagination li{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 15px;
+    }
+}
+
+
+/* CSS pour la navbar - propriétaire */
+.navbar {
+    background-color: #ffffff;
+  }
+
+  .navbar.fixed-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .navbar-brand {
+    margin-right: 15px;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0;
+  }
+
+  .circle-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-right: 10px;
+    font-size: 14px;
+    border: 1px solid #7e7878;
+  }
+
+  .dropdown-menu {
+    min-width: 200px;
+  }
+
+  .dropdown-item {
+    white-space: nowrap;
+  }
+
+  .dropdown-menu-right {
+    right: 0;
+    left: auto !important;
+  }
+
+  .bg-custom-nav-propri{
+    background-color: white;
+  }
+
+
+  .btn-primary2 {
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary2:hover {
+    background-color: transparent !important;
+    transform: translateY(-2px);
+}
+
+.icon-menu {
+    color: black !important;
+}
+
+
+.active-tab {
+    border-bottom: 3px solid #004aad;
+    font-weight: 500;
+}
+.profile-card {
+    border-color: rgb(0, 0, 0);
+}
+.profile-card-header {
+    background-color: #004aad;
+    color: white;
+}
+.dashed-border {
+    border: 2px dashed #004aad;
+}
+
+.nav-tabs .nav-link {
+    color: #004aad;
+
+}
+
+
+.profile-card {
+    border-color: rgb(155, 153, 153);
+    max-width: 600px;
+    margin: auto;
+}
+.profile-card-header {
+    background-color: #004aad;
+    color: white;
+}
+.dashed-border {
+    border: 2px dashed #004aad;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+    max-width: 320px;
+}
+
+.btn-primary {
+    background-color: rgb(7, 168, 115) !important;
+    border-color: rgb(7, 168, 115) !important;
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color:  #2EB88A !important;
+    border-color: #2EB88A !important;
+    transform: translateY(-2px);
+}
+
+.btn-ins {
+    border: 1px solid #004aad;
+    color: #004aad;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+.btn-ins:hover {
+    background-color: #0760d4;
+    color: white;
+    transform: translateY(-2px);
+}
+
+
+.btn-del {
+    border: 1px solid #a72525;
+    color: #db0d0d;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out;
+}
+.btn-del:hover {
+    background-color: #a72525;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.btn-success {
+    background-color: #004aad !important;
+    border-color: #004aad !important;
+}
+
+.btn-success:hover {
+    background-color: #0760d4 !important;
+    border-color: #0760d4 !important;
+    color: white !important;
+}
+.shadow-bottom {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
